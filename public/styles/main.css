@@ -1,0 +1,130 @@
+/* styles-dark.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.createPost form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.newPost ul {
+    list-style: none;
+    padding: 0;
+}
+
+.newPost li {
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+    position: relative;
+}
+
+.newPost li::before {
+    
+    display: inline-block;
+    width: 1em;
+    margin-right: 10px;
+    color: #ccc;
+}
+
+.newPost a {
+    margin-left: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.newPost a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.editLink, .deleteLink {
+    color: #28a745;
+    text-decoration: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.editLink:hover, .deleteLink:hover {
+    text-decoration: underline;
+    color: #218838;
+}
+
+.deleteLink {
+    color: #dc3545;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+#mainHeading {
+    font-size: 3.5em;
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Honk', system-ui;
+    color: #61dafb; /* Light blue color, you can adjust it to your preference */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a subtle text shadow for a fancy effect */
+}
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .createPost form {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+        padding: 6px;
+    }
+
+    input[type="submit"] {
+        padding: 8px 16px;
+    }
+}
